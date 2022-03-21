@@ -1,4 +1,3 @@
-from pprint import pprint
 import re
 
 # читаем адресную книгу в формате CSV в список contacts_list
@@ -38,8 +37,6 @@ for contact_1 in contacts_list:
         if contact_1[i] == '':
           contacts_list[contacts_list.index(contact_1)][i] = contacts_list[contacts_list.index(contact_2)][i]
       del(contacts_list[contacts_list.index(contact_2)])
-
-pprint(contacts_list)
 
 
 # TODO 2: сохраните получившиеся данные в другой файл
